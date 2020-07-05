@@ -1,79 +1,78 @@
-## Variables
+## Değişkenler
 
-A variable is a value assigned to an identifier, so you can reference and use it later in the program.
+Değişken, bir tanımlayıcıya(identifier) atanmış değerdir(value). Yani referans edebilir ve daha sonra programda kullanabilirsiniz.
 
-This is because JavaScript is **loosely typed**, a concept you'll frequently hear about.
+Bunun nedeni JavaScript'in **esnek yazım(loosely typed)** özelliğine sahip olmasıdır. Bunu ileride sıkça duyacaksınız.
 
-A variable must be declared before you can use it.
+Bir değişken(variable) kullanabilmeniz için önce onu belirtmeniz gerekir.
 
-We have 2 main ways to declare variables. The first is to use `const`:
+Değişkenleri belirtmenin iki esas yolu var. Birincisi `const` kullanmak.
 
 ```js
 const a = 0
 ```
 
-The second way is to use `let`:
+İkinci yolu ise `let`:
 
 ```js
 let a = 0
 ```
 
-What's the difference?
+Fark nedir?
 
-`const` defines a constant reference to a value. This means the reference cannot be changed. You cannot reassign a new value to it.
+`const` bir değeri referans alan sabiti(constant) tanımlar. Demek oluyor ki referans değiştirilemez. Buna yeni bir değer atayamazsınız.
 
-Using `let` you can assign a new value to it.
+`let` kullanımı sizin yeni bir değer atamanıza izin verir.
 
-For example, you cannot do this:
+Örneğin şunu yapamazsınız:
 
 ```js
 const a = 0
 a = 1
 ```
 
-Because you'll get an error: `TypeError: Assignment to constant variable.`.
+Çünkü bunu yapmaya çalıştığınızda şu hatayı alacaksınız: `TypeError: Assignment to constant variable.`.
 
-On the other hand, you can do it using `let`:
+Öte yandan `let` kullanarak bunu yapabilirsiniz:
 
 ```js
 let a = 0
 a = 1
 ```
 
-`const` does not mean "constant" in the way some other languages like C mean. In particular, it does not mean the value cannot change - it means it cannot be reassigned. If the variable points to an object or an array (we'll see more about objects and arrays later) the content of the object or the array can freely change.
+`const` C gibi diğer dillerdeki "sabit(constant)" anlamına gelmez. Değerin değiştirilemezliği anlamına gelmez, yeniden bir değer atanamayacağı anlamına gelir. Eğer değişken, bir nesneyi ya da diziyi gösteriyorsa, bu nesnenin ve dizinin içeriği dilediğiniz gibi değişebilir(Dizileri ve nesneleri ileride göreceğiz).
 
-`const` variables must be initialized at the declaration time:
+`const` değişkenleri atama yapıldığı anda bir değer edinmeli:
 
 ```js
 const a = 0
 ```
 
-but `let` values can be initialized later:
+fakat `let` değerleri sonra da edindirilebilir:
 
 ```js
 let a
 a = 0
 ```
 
-You can declare multiple variables at once in the same statement:
+Bir durumda(statement) aynı anda birden fazla değişken belirtilebilir: 
 
 ```js
 const a = 1, b = 2
 let c = 1, d = 2
 ```
 
-But you cannot redeclare the same variable more than one time:
+Fakat aynı değişkeni birden fazla kez belirtemezsiniz:
 
 ```js
 let a = 1
 let a = 2
 ```
 
-or you'd get a "duplicate declaration" error.
+ya da "Birden fazla belirtim(duplicate declaration)" hatası alırsınız. 
 
-My advice is to always use `const` and only use `let` when you know you'll need to reassign a value to that variable. Why? Because the less power our code has, the better. If we know a value cannot be reassigned, it's one less source for bugs.
+Benim size tavsiyem her zaman `const` kullanmanız. `let` sadece bir değişkene yeniden değer atama ihtiyacınız olacağını bildiğiniz zaman kullanılmalı. Neden mi? Çünkü kodumuzun iktidarı ne kadar az olursa o kadar iyi. Bir değerin yeniden atanamadığını bilirsek buglar için de o kadar az kaynak anlamına gelir.
 
-Now that we saw how to work with `const` and `let`, I want to mention `var`.
+Şimdiye kadar `const` ve `let` ile nasıl çalışılacağını gördük. Sizlere `var` hakkında bir şeyler bahsetmek istiyorum.
 
-Until 2015, `var` was the only way we could declare a variable in JavaScript. Today, a modern codebase will most likely just use `const` and `let`. There are some fundamental differences which I detail [in this post](https://flaviocopes.com/javascript-difference-let-var/) but if you're just starting out, you might not care about them. Just use `const` and `let`.
-
+2015'e kadar `var` JavaScript'te bir deişken tanımlamanın tek yoluydu. Bugün ise modern kod tabanları daha çok sadece `const` ve `let` kullanmaktalar. Şu [linkte]((https://flaviocopes.com/javascript-difference-let-var/)) bazı temel farklılıklarını anlattım ama yeni başlayanlardansanız bunu şimdilik çok dikkate almayabilirsiniz. Sadece `const` ve `let` kullanın.
