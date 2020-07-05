@@ -1,28 +1,27 @@
-## Types
+## (Tipler)Types
 
-Variables in JavaScript do not have any type attached.
+JavaScript'teki değişkenlerin belli bir tipi yoktur.
 
-They are *untyped*.
+Bir değişkene bazı tiplerde bir değer atadığınızda, 
+daha sonra değişkeni, herhangi bir sorun olmadan başka tipte bir değeri barındırmak üzere yeniden atayabilirsiniz.
 
-Once you assign a value with some type to a variable, you can later reassign the variable to host a value of any other type without any issues.
+JavaScript'te iki tür tip vardır: **primitive tipler** ve **object tipler**.
 
-In JavaScript we have 2 main kinds of types: **primitive types** and **object types**.
+### Primitif(Primitive) Tipler
 
-### Primitive types
-
-Primitive types are
+Primitive tipler şunlardır:
 
 - numbers
 - strings
 - booleans
 - symbols
 
-And two special types: `null` and `undefined`.
+Ve iki özel tip: `null` ve `undefined`.
 
-### Object types
+### Object Tipler
 
-Any value that's not of a primitive type (a string, a number, a boolean, null or undefined) is an **object**.
+Primitif olmayan herhangi bir değer **object** tiptir.
 
-Object types have **properties** and also have **methods** that can act on those properties.
+Object tipler **propertyler** ve bu propertylere göre davranan **methodlar** içerirler.
 
-We'll talk more about objects later on.
+Bunlardan daha sonra da bahsedeceğiz.
