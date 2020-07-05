@@ -1,10 +1,10 @@
-## Expressions
+## Expressionlar(İfadeler)
 
-An expression is a single unit of JavaScript code that the JavaScript engine can evaluate, and return a value.
+Bir expression(ifade) JavaScript motorunun derleyebileceği ve geriye bir değer döndürebileceği yalın tek bir JavaScript kodu birimidir. 
 
-Expressions can vary in complexity.
+Expressionlar karmaşıklık bakımından değişebilir.
 
-We start from the very simple ones, called primary expressions:
+Birincil expressionlar diye adlandırılanlardan basit bir tanesinden başlayalım:
 
 ```js
 2
@@ -12,12 +12,12 @@ We start from the very simple ones, called primary expressions:
 'something'
 true
 false
-this //the current scope
+this //mevcut scope
 undefined
-i //where i is a variable or a constant
+i // i 'nin bir değişken ya da sabit olması
 ```
 
-Arithmetic expressions are expressions that take a variable and an operator (more on operators soon), and result in a number:
+Aritmetik ifadeler değişken ya da işlem operatörü alan ve bir sayı sonucu veren ifadelerdir:
 
 ```js
 1 / 2
@@ -26,18 +26,17 @@ i -= 2
 i * 2
 ```
 
-String expressions are expressions that result in a string:
+String ifadeler yine string sonucu veren ifadelerdir:
 
 ```js
 'A ' + 'string'
 ```
 
-Logical expressions make use of logical operators and resolve to a boolean value:
+Mantıksal ifadeler mantıksal operatörlerin kullanımını sağlar ve boolean değerler ile sonuçlanır:
 
 ```js
 a && b
 a || b
 !a
 ```
-
-More advanced expressions involve objects, functions, and arrays, and I'll introduce them later.
+Nesneleri, fonksiyonları ve dizileri içeren daha ileri ifadelern de daha sonra bahsedeceğim.
