@@ -1,27 +1,27 @@
-## Operators
+## İşlemler(Operators)
 
-Operators allow you to get two simple expressions and combine them to form a more complex expression.
+İşlemler size iki basit ifadeyi alıp daha kompleks bir formda bir araya getirmenizi sağlar.
 
-We can classify operators based on the operands they work with. Some operators work with 1 operand. Most work with 2 operands. Just one operator works with 3 operands.
+İşlemleri operandlar(işlenenler) üzerine kurarız. Bazı işlemler(operatörler) tek bir işlenenle(operand) ile çalışırken çoğu iki tane ile çalışır. Üç tane ile çalışan sadece bir tane vardır.
 
-In this first introduction to operators, we'll introduce the operators you are most likely familiar with: operators with 2 operands.
+İlkin işlemleri tanıtırken çoğunuzun aşina olanı ile başlayacağız: İki işlenenli işlemler.
 
-I already introduced one when talking about variables: the assignment operator `=`. You use `=` to assign a value to a variable:
+Değişkenlerden(variables) bahsederken birine değindik zaten: Atama işlemi(assignment operator) `=`. Bunu bir değişkene değer atarken kullanırız:
 
 ```js
 let b = 2
 ```
 
-Let's now introduce another set of binary operators that you're already familiar with from basic math.
+Şimdi de temel matematikten aşina olduğunuz diğer işlemlere bakalım:  
 
-### The addition operator (+)
+### Toplama Operatörü(The addition operator) (+)
 
 ```js
 const three = 1 + 2
 const four = three + 1
 ```
 
-The `+` operator also does string concatenation if you use strings, so pay attention:
+`+` işlemiaynı zamanda string kullanımında birleştirme işlemi görür. Örneğe dikkat edin:
 
 ```js
 const three = 1 + 2
@@ -29,56 +29,55 @@ three + 1 // 4
 'three' + 1 // three1
 ```
 
-### The subtraction operator (-)
+### Çıkarma İşlemi(The subtraction operator) (-)
 
 ```js
 const two = 4 - 2
 ```
 
-### The division operator (/)
+### Bölme İşlemi(The division operator) (/)
 
-Returns the quotient of the first operator and the second:
+Birinci ve ikinci işlemlerden dönen bölümler:
 
 ```js
 const result = 20 / 5 //result === 4
 const result = 20 / 7 //result === 2.857142857142857
 ```
 
-If you divide by zero, JavaScript does not raise any error but returns the `Infinity` value (or `-Infinity` if the value is negative).
+Sıfır(0) ile bölme yaptığınızda, JavaScript bir hata vermez, fakat `Infinity` value (ya da değer negatifse `-Infinity`) döndürür.
 
 ```js
 1 / 0 //Infinity
 -1 / 0 //-Infinity
 ```
 
-### The remainder operator (%)
+### Yüzde İşlemi(The remainder operator) (%)
 
-The remainder is a very useful calculation in many use cases:
+Yüzde işlemi birçok durum için oldukça kullanışlıdır:
 
 ```js
 const result = 20 % 5 //result === 0
 const result = 20 % 7 //result === 6
 ```
-
-A remainder by zero is always `NaN`, a special value that means "Not a Number":
+Bir değerin yüzde 0'ını işleme almaya çalıştığınızda her zaman `NaN` "Not a Number" özel değerini alırsınız:
 
 ```js
 1 % 0 //NaN
 -1 % 0 //NaN
 ```
 
-### The multiplication operator (*)
+### Çarpma İşlemi(The multiplication operator) (*)
 
-Multiply two numbers
+İki sayının çarpımını verir:
 
 ```js
 1 * 2 //2
 -1 * 2 //-2
 ```
 
-### The exponentiation operator (**)
+### Üs Alma İşlemi(The exponentiation operator) (**)
 
-Raise the first operand to the power of the second operand
+İlk değerin ikinci değer cinsinden üssünü verir:
 
 ```js
 1 ** 2 //1

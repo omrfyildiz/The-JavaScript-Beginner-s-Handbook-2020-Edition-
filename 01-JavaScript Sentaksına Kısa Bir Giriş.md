@@ -20,7 +20,7 @@ Bu kısacık girişte sizlere beş konu hakkında bir şeyler söyleyeceğim:
 
 * Büyük-küçük harf ayrımı
 
-* Yazım
+* Yazım(Literals)
 
 * Tanımlayıcılar(identifiers)
 
@@ -74,9 +74,9 @@ true
 
 
 
-## Yazım
+## Yazım(Literals)
 
-Yazımı kaynak kodda yazılmış bir değer olarak tanımlarız. Örneğin bir sayı(number), string, boolean ya da Nesne(Object) yazımı veya Dizi(Array) yazımı gibi daha ileri constructlar(yapılar).
+Yazımı kaynak kodda yazılmış bir değer olarak tanımlarız. Örneğin bir sayı(number), string, boolean ya da Nesne yazımı(Object literals) veya Dizi yazımı(Array literals) gibi daha ileri constructlar(yapılar).
 
 ```javascript
 5
