@@ -2,7 +2,7 @@
 
 Değişken, bir tanımlayıcıya(identifier) atanmış değerdir(value). Yani referans edebilir ve daha sonra programda kullanabilirsiniz.
 
-Bunun nedeni JavaScript'in **esnek yazım(loosely typed)** özelliğine sahip olmasıdır. Bunu ileride sıkça duyacaksınız.
+Bunun nedeni JavaScript'in **esnek tipli(loosely typed)** özelliğe sahip olmasıdır. Bunu ileride sıkça duyacaksınız.
 
 Bir değişken(variable) kullanabilmeniz için önce onu belirtmeniz gerekir.
 
