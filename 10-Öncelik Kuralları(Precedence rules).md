@@ -1,18 +1,18 @@
-## Precedence rules
+## Öncelik Kuralları(Precedence rules)
 
-Every complex statement with multiple operators in the same line will introduce precedence problems.
+Her aynı satırdaki birden fazla işlem, öncelik problemleri ile karşılaşmamıza neden olur. 
 
-Take this example:
+Şu örneğe bakalım:
 
 ```js
 let a = 1 * 2 + 5 / 2 % 2
 ```
 
-The result is 2.5, but why?
+Sonuç 2.5, peki neden?
 
-What operations are executed first, and which need to wait?
+İlk işleme alınması gerekenler nedir ve hangisi neden beklemek durumundadır?
 
-Some operations have more precedence than the others. The precedence rules are listed in this table:
+Bazı işlemler diğerlerine göre önceliğe sahiptir. Öncelik kuralları şu tabloda sıralanmıştır:
 
 | OPERATOR    | DESCRIPTION             |
 | :---------- | :---------------------- |
@@ -20,9 +20,9 @@ Some operations have more precedence than the others. The precedence rules are l
 | `+` `-`     | addition/subtraction    |
 | `=`         | assignment              |
 
-Operations on the same level (like `+` and `-`) are executed in the order they are found, from left to right.
+Aynı düzeydeki işlemler(`+` ve `-` gibi) olduğu gibi işleme konur, soldan sağa.
 
-Following these rules, the operation above can be solved in this way:
+Bu kuralları takip ederek yukarıdaki örneği şu şekilde çözeriz:
 
 ```js
 let a = 1 * 2 + 5 / 2 % 2

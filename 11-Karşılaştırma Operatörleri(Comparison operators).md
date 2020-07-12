@@ -1,28 +1,28 @@
-## Comparison operators
+## Karşılaştırma İşlemleri(Comparison operators)
 
-After assignment and math operators, the third set of operators I want to introduce is conditional operators.
+Atama ve matematik işlemlerinden sonra, üçüncü işlemler seti olarak size karşılaştırma operatörlerini tanıtmak istiyorum.
 
-You can use the following operators to compare two numbers, or two strings.
+Şimdi göreceğimiz işlemleri iki sayıyı ya da stringi karşılaştırırken kullanabilirsiniz.
 
-Comparison operators always return a boolean, a value that's `true` or `false`).
+Karşılaştırma işlemleri her zaman `true` ya da `false` bir boolean döndürür.
 
-Those are **disequality comparison operators**:
+Şunlar **eşitsizlik karşılaştırma işlemleri**:
 
-- `<` means "less than"
-- `<=` means "less than or equal to"
-- `>` means "greater than"
-- `>=` means "greater than or equal to"
+- `<` "küçüktür" anlamına gelir
+- `<=` "küçük eşittir" anlamına gelir
+- `>` "büyüktür" anlamına gelir
+- `>=` "büyük eşittir" anlamına gelir
 
-Example:
+Örnek:
 
 ```js
 let a = 2
 a >= 1 //true
 ```
 
-In addition to those, we have 4 **equality operators**. They accept two values, and return a boolean:
+Bunlara ek olarak, dört tane **eşitlik işlemi** vardır. İki değer alır ve boolean döner:
 
-- `===` checks for equality
-- `!==` checks for inequality
+- `===` eşitlik durumunu kontrol eder
+- `!==` eşitsizlik durumunu kontrol eder
 
-Note that we also have `==` and `!=` in JavaScript, but I highly suggest to only use `===` and `!==` because they can prevent some subtle problems.
+Unutmayın ki JavaScript'te bir de `==` ve `!=` vardır. Fakat benim size önerim sadece `===` ve `!==` kullanmanız, çünkü bu sayede bazı küçük problemlerin önüne geçebilirsiniz.
