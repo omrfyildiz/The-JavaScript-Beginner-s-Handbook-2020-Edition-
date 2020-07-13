@@ -1,10 +1,10 @@
-## Conditionals
+## Koşullu İfadeler(Conditionals)
 
-With the comparison operators in place, we can talk about conditionals.
+Karşılaştırma operatörlerinden bahsederken koşullu ifadelere de değinebiliriz.
 
-An `if` statement is used to make the program take a route, or another, depending on the result of an expression evaluation.
+Bir `if` ifadesi, programı, bir ifade derlemesinin sonucuna bağlı olan döngü olarak yaratmak için kullanılır.
 
-This is the simplest example, which always executes:
+Her zaman gerçekleşebilecek basit bir örnek:
 
 ```js
 if (true) {
@@ -12,7 +12,7 @@ if (true) {
 }
 ```
 
-on the contrary, this is never executed:
+Yukarıdaki örneğin aksine, şu örnek hiç gerçekleşmez:
 
 ```js
 if (false) {
@@ -20,21 +20,22 @@ if (false) {
 }
 ```
 
-The conditional checks the expression you pass to it for a true or false value. If you pass a number, that always evaluates to true unless it's 0. If you pass a string, it always evaluates to true unless it's an empty string. Those are general rules of casting types to a boolean.
 
-Did you notice the curly braces? That is called a **block**, and it is used to group a list of different statements.
+Koşullu ifade, kendisine ilettiğiniz ifadeyi doğru(true) veya yanlış(false) bir değer açısından kontrol eder. Bir sayı iletirseniz, bu 0 olmadığı sürece her zaman true olarak değerlendirilir. Bir string iletirseniz, boş bir dize olmadığı sürece her zaman true olarak değerlendirilir. Bunlar, bir boolean'in davranış türünün genel kurallarıdır.
 
-A block can be put wherever you can have a single statement. And if you have a single statement to execute after the conditionals, you can omit the block, and just write the statement:
+Süslü parantezleri(curly braces) fark ettiniz mi? Bu **block** olarak adlandırılır ve farklı farklı statementlar(kod satırı) listesini gruplamak için kullanılır.
+
+Tekil bir statement olan her yerde block kullanılabilir. Bir koşuldan sonra çalışmasını istediğiniz bir tekil statement varsa blocktan kurtulup sadece statement'i yazılabilir. 
 
 ```js
 if (true) doSomething()
 ```
 
-But I always like to use curly braces to be more clear.
+Fakat ben her zaman daha açık olması için süslü parantezleri tercih ediyorum.
 
-You can provide a second part to the `if` statement: `else`.
+`if` statement'ına ikinci olarak `else` ekleyebilirsiniz:
 
-You attach a statement that is going to be executed if the `if` condition is false:
+`if` koşulu false(yanlış) olursa çalışacak statement `else` olur.
 
 ```js
 if (true) {
@@ -44,7 +45,7 @@ if (true) {
 }
 ```
 
-Since `else` accepts a statement, you can nest another if/else statement inside it:
+`else` bir statement kabul ettiğinden, içine başka bir if/else statement'ı yerleştirebilirsiniz:
 
 ```js
 if (a === true) {
