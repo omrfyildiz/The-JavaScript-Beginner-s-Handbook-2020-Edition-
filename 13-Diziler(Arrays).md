@@ -1,34 +1,34 @@
-## Arrays
+## Diziler(Arrays)
 
-An array is a collection of elements.
+Bir dizi birçok öğenin bir arada olmasını ifade eder.
 
-Arrays in JavaScript are not a *type* on their own.
+JavaScript'teki diziler kendi başlarına bir *type(tür)* değildir.
 
-Arrays are **objects**.
+Diziler **objects(nesne)**dir.
 
-We can initialize an empty array in these 2 different ways:
+Boş bir diziyi iki farklı yolla başlatabiliriz:
 
 ```js
 const a = []
 const a = Array()
 ```
 
-The first is using the **array literal syntax**. The second uses the Array built-in function.
+İlk kullanım **array literal syntax(dizi yazım sentaksı)**. İkinci kullanım ise 'Array built-in function(dahili fonksiyonlu dizi)'.
 
-You can pre-fill the array using this syntax:
+Bu sentaksı kullanarak diziyi önceden doldurabilirsiniz:
 
 ```js
 const a = [1, 2, 3]
 const a = Array.of(1, 2, 3)
 ```
 
-An array can hold any value, even values of different types:
+Bir dizi farklı türlerde de olsa herhangi bir değeri bir arada tutabilir:
 
 ```js
 const a = [1, 'Flavio', ['a', 'b']]
 ```
 
-Since we can add an array into an array, we can create multi-dimensional arrays, which have very useful applications (e.g. a matrix):
+Bir dizinin içine birden fazla dizi eklenebildiğinden, çok kullanışlı uygulamaları olan çok boyutlu diziler yaratabiliyoruz (a matrix gibi):
 
 ```js
 const matrix = [
@@ -41,7 +41,7 @@ matrix[0][0] //1
 matrix[2][0] //7
 ```
 
-You can access any element of the array by referencing its index, which starts from zero:
+Bir dizinin herhangi bir öğesine sıfırdan başlayan indeks numarasını referans vererek ulaşabilirsiniz:
 
 ```js
 a[0] //1
@@ -49,20 +49,20 @@ a[1] //2
 a[2] //3
 ```
 
-You can initialize a new array with a set of values using this syntax, which first initializes an array of 12 elements, and fills each element with the number `0`:
+İlk olarak 12 öğeden oluşan bir diziyi başlatan ve her öğeyi `0` sayısıyla dolduran bu sentaksı kullanarak bir değer setiyle yeni bir dizi başlatabilirsiniz:
 
 ```js
 Array(12).fill(0)
 ```
 
-You can get the number of elements in the array by checking its `length` property:
+Dizideki öğelerin adetini `length` özelliğini kullanarak edinebilirsiniz:
 
 ```js
 const a = [1, 2, 3]
 a.length //3
 ```
 
-Note that you can set the length of the array. If you assign a bigger number than the arrays current capacity, nothing happens. If you assign a smaller number, the array is cut at that position:
+Dizinin uzunluğunu ayarlayabileceğinizi unutmayın. Dizinin boyutundan yüksek bir değer verdiğinizde ise bir şey değişmeyecektir. Daha küçük bir değer verdiğinizde, dizi, o sayıda duracaktır.
 
 ```js
 const a = [1, 2, 3]
@@ -71,38 +71,38 @@ a.length = 2
 a //[ 1, 2 ]
 ```
 
-### How to add an item to an array
+### Bir diziye öğe nasıl eklenir 
 
-We can add an element at the end of an array using the `push()` method:
+Dizinin sonuna `push()` metodu ile yeni öğe ekleyebiliriz:
 
 ```js
 a.push(4)
 ```
 
-We can add an element at the beginning of an array using the `unshift()` method:
+Dizinin başlangıcına öğe ekleyebilmek için `unshift()` metodunu kullanırız:
 
 ```js
 a.unshift(0)
 a.unshift(-2, -1)
 ```
 
-### How to remove an item from an array
+### Bir öğe diziden nasıl kaldırılır:
 
-We can remove an item from the end of an array using the `pop()` method:
+Bir dizinin sonundan öğe kaldırabilmek için `pop()` metodunu kullanırız:
 
 ```js
 a.pop()
 ```
 
-We can remove an item from the beginning of an array using the `shift()` method:
+Bir dizinin başlangıcından öğe kaldırabilmek için `shift()` metodunu kullanırız:
 
 ```js
 a.shift()
 ```
 
-### How to join two or more arrays
+### İki ya da daha fazla diziyi birleştirme
 
-You can join multiple arrays by using `concat()`:
+Birden fazla diziyi `concat()` kullanarak birleştirebilriz:
 
 ```js
 const a = [1, 2]
@@ -112,7 +112,7 @@ a //[1,2]
 b //[3,4]
 ```
 
-You can also use the **spread** operator (`...`) in this way:
+**spread** işlemini (`...`) kullanarak da bu işlemi yapabilirsiniz:
 
 ```js
 const a = [1, 2]
@@ -121,9 +121,9 @@ const c = [...a, ...b]
 c //[1,2,3,4]
 ```
 
-### How to find a specific item in the array
+### Dizi içerisinde belirli bir öğeyi bulmak
 
-You can use the `find()` method of an array:
+`find()` metodunu kullanarak bir dizideki öğeyi bulabilirsiniz:
 
 ```js
 a.find((element, index, array) => {
@@ -131,17 +131,18 @@ a.find((element, index, array) => {
 })
 ```
 
-Returns the first item that returns true, and returns `undefined` if the element is not found.
+True değerini döndüren ilk değer döner ve eğer öğe bulunmazsa `undefined` döner.
 
-A commonly used syntax is:
+Genellikle kullanılan sentaks şudur: 
 
 ```js
 a.find(x => x.id === my_id)
 ```
 
+Yukarıdaki kod satırı dizedeki `id === my_id` nin sahip olduğu ilk öğeyi verir.
 The above line will return the first element in the array that has `id === my_id`.
 
-`findIndex()` works similarly to `find()`, but returns the index of the first item that returns true, and if not found, it returns `undefined`:
+`findIndex()` çalışma biçimi `find()` ile benzerdir, fakat true değer dönen ilk öğenin indeksini verir. Eğer bulunmazsa `undefined` olarak döner:
 
 ```js
 a.findIndex((element, index, array) => {
@@ -149,16 +150,16 @@ a.findIndex((element, index, array) => {
 })
 ```
 
-Another method is `includes()`:
+Bir diğer metod `includes()`:
 
 ```js
 a.includes(value)
 ```
 
-Returns true if `a` contains `value`.
+True değer döner eğer `a` bir `value(dğer)` içeriyorsa.
 
 ```js
 a.includes(value, i)
 ```
 
-Returns true if `a` contains `value` after the position `i`.
+True değer döner eğer `a` `i` konumundan sonra bir `value(değer)` içeriyorsa.
