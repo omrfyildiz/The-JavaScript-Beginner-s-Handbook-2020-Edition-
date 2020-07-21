@@ -1,14 +1,14 @@
-## Functions
+## Fonksiyonlar(Functions)
 
-In any moderately complex JavaScript program, everything happens inside functions.
+Az çok kompleks her JavaScript programında her şey fonksiyonlar içinde olup biter.
 
-Functions are a core, essential part of JavaScript.
+JavaScript'in temel parçası olarak fonksiyonlar bir çekirdektir.
 
-What is a function?
+Fonksiyon Nedir?
 
-A function is a block of code, self contained.
+Bir fonksiyon müstakil bir kod blokudur.
 
-Here's a **function declaration**:
+İşte bir **fonksiyon deklarasyonu**:
 
 ```js
 function getData() {
@@ -16,13 +16,14 @@ function getData() {
 }
 ```
 
-A function can be run any time you want by invoking it, like this:
+Bir fonksiyonu çağırarak onu istediğiniz zaman çalıştırabilirsiniz. 
+Şöyle:
 
 ```js
 getData()
 ```
 
-A function can have one or more argument:
+Bir fonksiyon bir ya da daha fazla argümana sahip olabilir:
 
 ```js
 function getData() {
@@ -38,7 +39,7 @@ function getData(color, age) {
 }
 ```
 
-When we can pass an argument, we invoke the function passing parameters:
+Bir argümanı iletebildiğimizde, parametreleri iletilen fonksiyonu çağırırız:
 
 ```js
 function getData(color, age) {
@@ -49,9 +50,9 @@ getData('green', 24)
 getData('black')
 ```
 
-Note that in the second invokation I passed the `black` string parameter as the `color` argument, but no `age`. In this case, `age` inside the function is `undefined`.
+Unutmayın, ikinci çağrıda `black` string parametresini `color` argümanını `age` olmadan geçirdim. Dolayısıyla fonksiyondaki `age` ise `undefined` yani tanımlanmamış olur.
 
-We can check if a value is not undefined using this conditional:
+Şu koşulu kullanarak bir değerin undefined olup olmadığını kontrol edebiliriz:
 
 ```js
 function getData(color, age) {
@@ -62,9 +63,9 @@ function getData(color, age) {
 }
 ```
 
-`typeof` is a unary operator that allows us to check the type of a variable.
+`typeof` unary(tekli) bir işlemdir, değişkenin türünü kontrol etmemize olanak tanır.
 
-You can also check in this way:
+Ayrıca şu şekilde de kontrol edebilirsiniz:
 
 ```js
 function getData(color, age) {
@@ -75,9 +76,9 @@ function getData(color, age) {
 }
 ```
 
-Although the conditional will also be true if `age` is `null`, `0` or an empty string.
+Eğer `age` `null`, `0` ya da boş bir string ise, koşul her halükarda true olacaktır.
 
-You can have default values for parameters, in case they are not passed:
+Çağrılma durumları olmasa bile parametreler için varsayılan değerler(default values) verebilirsiniz:
 
 ```js
 function getData(color = 'black', age = 25) {
@@ -85,9 +86,9 @@ function getData(color = 'black', age = 25) {
 }
 ```
 
-You can pass any value as a parameter: numbers, strings, booleans, arrays, objects, and also functions.
+Parametre olarak herhangi bir değer çağırabilirsiniz: numbers(sayılar), stringler, boolean değerler, array(dizi), objects(nesneler) ve ayrıca fonksiyonlar.
 
-A function has a return value. By default a function returns `undefined`, unless you add a `return` keyword with a value:
+Bir fonksiyon dönüş değerine(return value) sahiptir. Varsayılan olarak, bir değerle birlikte `return`  anahtar kelimesini kullanmadığınız sürece, bir fonksiyon `undefined` döner:
 
 ```js
 function getData() {
@@ -96,7 +97,7 @@ function getData() {
 }
 ```
 
-We can assign this return value to a variable when we invoke the function:
+Fonksiyonu çağırdığımızda, bu dönüş değerini bir değişkene atayabiliriz:
 
 ```js
 function getData() {
@@ -107,11 +108,11 @@ function getData() {
 let result = getData()
 ```
 
-`result` now holds a string with the the `hi!` value.
+`result` artık `hi!` değerinde bir string tutmaktadır.
 
-You can only return one value.
+Yalnız bir tane değer döndürebilirsiniz.
 
-To return multiple values, you can return an object, or an array, like this:
+Çoklu değer dönmesi için bir nesne ya da dizi döndürebilirsiniz. Şu şekilde:  
 
 ```js
 function getData() {
@@ -121,7 +122,7 @@ function getData() {
 let [name, age] = getData()
 ```
 
-Functions can be defined inside other functions:
+Fonksiyonlar, başka fonksiyonlar içerisinde tanımlanabilir:
 
 ```js
 const getData = () => {
@@ -131,6 +132,6 @@ const getData = () => {
 }
 ```
 
-The nested function cannot be called from the outside of the enclosing function.
+İçerideki fonksiyon, dahil olduğu fonksiyonun dışından çağrılamaz.
 
-You can return a function from a function, too.
+Ayrıca bir fonksiyondan başka bir fonksiyon döndürebilirsiniz.
