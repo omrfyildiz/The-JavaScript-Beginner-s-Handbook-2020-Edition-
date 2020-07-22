@@ -1,10 +1,10 @@
-## Object Properties
+## Nesne Özellikleri(Object Properties)
 
-Objects have **properties**, which are composed by a label associated with a value.
+Nesnelerin **özellikleri(properties)** vardır. Bunlar bir değerle ilişkilendirilmiş künyeden(label) meydana gelir.
 
-The value of a property can be of any type, which means that it can be an array, a function, and it can even be an object, as objects can nest other objects.
+Propertynin değeri herhangi bir türde olabilir: Dizi, fonksiyon ve hatta diğer nesneleri barındıran nesneler. 
 
-This is the object literal syntax we saw in the previous chapter:
+Bu kullanım, önceki bölümde gördüğümüz nesne yazım sentaksı:
 
 ```js
 const car = {
@@ -12,7 +12,7 @@ const car = {
 }
 ```
 
-We can define a `color` property in this way:
+`color` diye bir property(özellik) tanımlıyoruz:
 
 ```js
 const car = {
@@ -20,9 +20,9 @@ const car = {
 }
 ```
 
-Here we have a `car` object with a property named `color`, with value `blue`.
+Şimdi `color` özelliği ile adlandırılmış ve bu özelliği `blue` olarak değer alan `car` diye bir nesnemiz var.
 
-Labels can be any string, but beware of special characters - if I wanted to include a character not valid as a variable name in the property name, I would have had to use quotes around it:
+Künyeler(labels) bir string olabilir, fakat özel karakterlere dikkat edin. Özelliğin adında değişken adı olarak geçerli olmayan bir karakter eklemek isteseydim, bunun etrafında tırnak işareti kullanmak zorunda kalırdım:
 
 ```js
 const car = {
@@ -31,31 +31,31 @@ const car = {
 }
 ```
 
-Invalid variable name characters include spaces, hyphens, and other special characters.
+Geçerli olmayan değişken ismi karakterleri boşluklar, tire ve diğer özel karakterlerdir.
 
-As you can see, when we have multiple properties, we separate each property with a comma.
+Gördüğünüz üzere, çoklu özellikler olduğunda her bir özelliği virgül işareti ile ayırıyoruz.
 
-We can retrieve the value of a property using 2 different syntaxes.
+Özelliğin değerini iki farklı sentaks kullanımıyla alabiliriz.
 
-The first is **dot notation**:
+İlki **nokta notasyonu(dot notation)**:
 
 ```js
 car.color //'blue'
 ```
 
-The second (which is the only one we can use for properties with invalid names), is to use square brackets:
+İkincisi(geçerli olmayan isimli propertylerde(özelliklerde) kullanabileceğimiz tek yol) ise köşeli parantezlerdir:
 
 ```js
 car['the color'] //'blue'
 ```
 
-If you access a nonexistant property, you'll get the `undefined` value:
+Var olmayan bir özelliğe erişirseniz `undefined` değerini alacaksınız:
 
 ```js
 car.brand //undefined
 ```
 
-As mentioned before, objects can have nested objects as properties:
+Daha önce de bahsedildiği gibi nesneler başka nesnelerin içinde property(özellik) olarak bulunabilirler:
 
 ```js
 const car = {
@@ -66,21 +66,21 @@ const car = {
 }
 ```
 
-In this example, you can access the brand name using
+Bu örnekte brand name'e şöyle erişirsiniz:
 
 ```js
 car.brand.name
 ```
 
-or
+ya da
 
 ```js
 car['brand']['name']
 ```
 
-You can set the value of a property when you define the object.
+Bir nesne tanımladığınız zaman özellik(property) değerini ayarlayabilirsiniz.
 
-But you can always update it later on:
+Fakat daha sonra bunu güncelleyebilirsiniz:
 
 ```js
 const car = {
@@ -91,7 +91,7 @@ car.color = 'yellow'
 car['color'] = 'red'
 ```
 
-And you can also add new properties to an object:
+Ve bir nesneye yeni özellikler ekleyebilirsiniz:
 
 ```js
 car.model = 'Fiesta'
@@ -99,7 +99,7 @@ car.model = 'Fiesta'
 car.model //'Fiesta'
 ```
 
-Given the object
+Verilen nesne
 
 ```js
 const car = {
@@ -108,7 +108,7 @@ const car = {
 }
 ```
 
-you can delete a property from this object using
+bundan bir özellik silebilmek için kullanmanız gereken
 
 ```js
 delete car.brand
