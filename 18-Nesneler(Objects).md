@@ -1,8 +1,8 @@
-## Objects
+## Nesneler(Objects)
 
-Any value that's not of a primitive type (a string, a number, a boolean, a symbol, null, or undefined) is an **object**.
+Primitif tür(primitive type) (string, number, boolean, symbol, null, undefined) olmayan herhangi bir değer **object** olarak geçer.
 
-Here's how we define an object:
+Bir object(nesne) nasıl tanımlanır bakalım:
 
 ```js
 const car = {
@@ -10,21 +10,21 @@ const car = {
 }
 ```
 
-This is the **object literal** syntax, which is one of the nicest things in JavaScript.
+Buna **object literal(nesne yazım)** sentaksı denir. JavaScript'teki en hoş şeylerden biridir.
 
-You can also use the `new Object` syntax:
+Ayrıca `new Object` sentaksını da kullanabilirsiniz:
 
 ```js
 const car = new Object()
 ```
 
-Another syntax is to use `Object.create()`:
+Bir diğer kullanım sentaksı ise `Object.Create()`: 
 
 ```js
 const car = Object.create()
 ```
 
-You can also initialize an object using the `new` keyword before a function with a capital letter. This function serves as a constructor for that object. In there, we can initialize the arguments we receive as parameters, to setup the initial state of the object:
+Bir nesneyi büyük harfle başlayan bir fonksiyondan önce `new` anahtar sözcüğü kullanarak da başlatabilirsiniz. Bu fonksiyon, nesne için constructor olarak hizmet edecektir. Bu yolla, nesnenin başlangıç durumunu ayarlamak için parametre olarak aldığımız argümanları başlatabiliriz:    
 
 ```js
 function Car(brand, model) {
@@ -33,7 +33,7 @@ function Car(brand, model) {
 }
 ```
 
-We initialize a new object using:
+Yeni bir nesneyi şunları kullanarak başlatırız:
 
 ```js
 const myCar = new Car('Ford', 'Fiesta')
@@ -41,11 +41,11 @@ myCar.brand //'Ford'
 myCar.model //'Fiesta'
 ```
 
-Objects are **always passed by reference**.
+Nesneler **her zaman referans olarak iletilir.**
 
-If you assign a variable the same value of another, if it's a primitive type like a number or a string, they are passed by value:
+Bir değişkeni aynı değerde bir başkasına atarsanız, number veya string gibi primitif türse(primitive type), değere göre iletilir:
 
-Take this example:
+Şu örneğe bakın:
 
 ```js
 let age = 36
@@ -60,4 +60,4 @@ anotherCar.color = 'yellow'
 car.color //'yellow'
 ```
 
-Even arrays or functions are, under the hood, objects, so it's very important to understand how they work.
+Diziler ve fonksiyonlar bile şapka altında nesnedirler. O halde nasıl çalıştıklarını anlamak çok önemli.
