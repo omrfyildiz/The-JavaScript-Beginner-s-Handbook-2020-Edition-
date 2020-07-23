@@ -56,8 +56,7 @@ class Person {
 }
 ```
 
-ve metodları bir sınıfın örneği üzerinden çağırabiliriz:  
-and we can invoke methods on an instance of the class:
+ve metodları bir sınıfın örneği(instance of the class) üzerinden çağırabiliriz:  
 
 ```js
 class Person {
