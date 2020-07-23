@@ -1,9 +1,9 @@
-## Conclusion
+## Sonsöz(Conclusion)
 
-Thanks a lot for reading this book.
+Bu kitabı okuduğunuz için çok teşekkürler.
 
-I hope it will inspire you to learn more about JavaScript.
+Umarım sizi JavaScript hakkında daha fazla öğrenmeye teşvik eder.
 
-For more on JavaScript, check out my blog [flaviocopes.com](https://flaviocopes.com/).
+JavaScript hakkında daha fazlası için blog sayfamı ziyaret edebilirsiniz [flaviocopes.com](https://flaviocopes.com/). 
 
-> Note: [You can get a PDF and ePub version of this JavaScript Beginner's Handbook](https://flaviocopes.com/page/javascript-handbook/)
+Not: [ Bu JavaScript Başlanıç ElKitabı'na orijinal dilinde PDF ya da ePub formatında erişebilirsiniz](https://flaviocopes.com/page/javascript-handbook/)
