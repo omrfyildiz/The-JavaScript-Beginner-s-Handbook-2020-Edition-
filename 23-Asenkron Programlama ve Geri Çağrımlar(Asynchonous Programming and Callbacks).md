@@ -52,7 +52,7 @@ Dosya sistemleri, network, eventler ya da tarayıcıdaki DOM ile çalışırken 
 
 Tüm bu bahsettiklerim JavaScript "temeli" olan şeyler değildir. Yani bu kitapta hepsi açıklanmadı, fakat birçok örneğini diğer handbooklarımda bulabilirsiniz [https://flaviocopes.com](https://flaviocopes.com/).
 
-Kodun içinde callbackleri nasıl uyguladığımızı görelim.
+Kodun içinde callbackler nasıl uygulanır görelim.
 
 Bir fonksiyon olan `callback` parametresini alacak olan fonksiyonu tanımlayalım.
 
