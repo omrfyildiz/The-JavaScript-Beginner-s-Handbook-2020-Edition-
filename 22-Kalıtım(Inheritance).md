@@ -20,7 +20,7 @@ class Programmer extends Person {
 }
 ```
 
-Şimdi ``Programmer` sınıfından yeni bir nesne türetirsek `hello()` metoduna erişimi olacaktır:
+Şimdi `Programmer` sınıfından yeni bir nesne türetirsek `hello()` metoduna erişimi olacaktır:
 
 ```js
 const flavio = new Programmer()
