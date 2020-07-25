@@ -1,18 +1,19 @@
 ## Promises
 
-Promises are an alternative way to deal with asynchronous code.
+Promiseler asenkron kodla başa çıkabilmenin alternatif bir yoludur.
+
+Bir önceki bölümde gördüğümüz gibi, callbacklerde(geri çağrımlarda) bir fonksiyonun işlenmesi bittiğinde çağrılacak olan başka bir fonksiyon call'a bir fonksiyon iletiyorduk. 
 
 As we saw in the previous chapter, with callbacks we'd be passing a function to another function call that would be called when the function has finished processing.
 
-Like this:
+Bunun gibi:
 
 ```js
 doSomething(result => {
   console.log(result)
 })
 ```
-
-When the `doSomething()` code ends, it calls the function received as a parameter:
+`doSomething()` kodu bittiğinde iletilen fonksiyonu bir parametre olarak çağırır:
 
 ```js
 const doSomething = callback => {
@@ -22,8 +23,7 @@ const doSomething = callback => {
   callback(result)
 }
 ```
-
-The main problem with this approach is that if we need to use the result of this function in the rest of our code, all our code must be nested inside the callback, and if we have to do 2-3 callbacks we enter in what is usually defined "callback hell" with many levels of functions indented into other functions:
+Bu yaklaşımdaki esas problem, eğer kodumuzun geri kalanında bu fonksiyonun result'ını kullanma ihtiyacımız olsaydı, bütün kodumuz callback'in içine yerleşmeliydi. Ve eğer iki-üç tane callback yapmak zorunda kalsaydık, genellikle "callback cehennemi" denen şeye, diğer fonksiyonlara girme eğilimi olan birçok fonksiyon katmanı ile birlikte girecektik:
 
 ```js
 doSomething(result => {
@@ -35,9 +35,9 @@ doSomething(result => {
 })
 ```
 
-Promises are one way to deal with this.
+Promiseler bu sorunla başa çıkmanın bir yoludur.
 
-Instead of doing:
+Şöyle yapmak yerine:
 
 ```js
 doSomething(result => {
@@ -45,7 +45,7 @@ doSomething(result => {
 })
 ```
 
-We call a promise-based function in this way:
+Promise temelli(promise-based) fonksiyonu bu yolla çağırırız:
 
 ```js
 doSomething()
@@ -54,11 +54,11 @@ doSomething()
   })
 ```
 
-We first call the function, then we have a `then()` method that is called when the function ends.
+Öncelikle fonksiyonu çağırdık, sonra fonksiyon bittiğinde bir `then()` metodu edindik.
 
-The indentation does not matter, but you'll often use this style for clarity.
+Satır girintisi önemli olmasa da okunabilirlik için bu stili sıkça kullanacaksınız.
 
-It's common to detect errors using a `catch()` method:
+Hataları yakalamak için `catch()` metodu kullanılması bilinen bir şeydir:
 
 ```js
 doSomething()
@@ -70,9 +70,9 @@ doSomething()
   })
 ```
 
-Now, to be able to use this syntax, the `doSomething()` function implementation must be a little bit special. It must use the Promises API.
+Şimdi bu sentaksı kullanabilmek için `doSomething()` fonksiyonu implementasyonu(uygulaması) birazcık özel olmalı. Promises API'sini kullanmalı.
 
-Instead of declaring it as a normal function:
+Normal bir fonksiyon olarak deklare etmek yerine:
 
 ```js
 const doSomething = () => {
@@ -80,21 +80,20 @@ const doSomething = () => {
 }
 ```
 
-We declare it as a promise object:
+Bir promise nesnesi olarak deklare ederiz:
 
 ```js
 const doSomething = new Promise()
 ```
 
-and we pass a function in the Promise constructor:
+ve Promise constructor'ında yeni bir fonksiyon olarak geçeriz:
 
 ```js
 const doSomething = new Promise(() => {
 
 })
 ```
-
-This function receives 2 parameters. The first is a function we call to resolve the promise, the second a function we call to reject the promise.
+Bu fonksiyon iki parametre alır. Birincisini promise'i resolve eden fonksiyon olarak adlandırırız, ikincisini ise reject eden promise olarak.
 
 ```js
 const doSomething = new Promise(
@@ -102,12 +101,11 @@ const doSomething = new Promise(
     
 })
 ```
+Bir promise'i resolve etmek demek onu başarılı bir şekilde tamamlamak manasına gelir(Herhangi bir kullanımda `then()` metodu çağrısından gelen sonuçtur).
 
-Resolving a promise means to complete it successfully (which results in calling the `then()` method in whatever uses it).
+Bir promise'i reject etmek demek bir hatayla sonlanması anlamına gelir(Bahsedilen hata, herhangi bir kullanımda `catch()` metodu çağrısından gelen sonuçtur.)
 
-Rejecting a promise means ending it with an error (which results in calling the `catch()` method in whatever uses it).
-
-Here's how:
+Tam olarak şöyle:
 
 ```js
 const doSomething = new Promise(
@@ -123,4 +121,4 @@ const doSomething = new Promise(
 )
 ```
 
-We can pass a parameter to the resolve and reject functions, of any type we want.
+resolve ve reject fonksiyonlara istediğimiz türde bir parametre geçebiliriz.
