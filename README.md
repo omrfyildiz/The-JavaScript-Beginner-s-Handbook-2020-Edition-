@@ -22,15 +22,21 @@ Fakat JavaScript bunlarla sınırlı değildir; ayrıca şunlar için de kullan�
 
 Esasında bir çok şeyi yapabilir. Yeni çıkan her şeyin bir noktada bazı JavaScript entegrasyonlarının olması oldukça popüler bir şey.
 
-JavaScript is a programming language that is:
+JavaScript nasıl bir programlama dilidir:
 
-- **high level**: it provides abstractions that allow you to ignore the details of the machine where it's running on. It manages memory automatically with a garbage collector, so you can focus on the code instead of managing memory like other languages like C would need, and provides many constructs which allow you to deal with highly powerful variables and objects.
-- **dynamic**: opposed to static programming languages, a dynamic language executes at runtime many of the things that a static language does at compile time. This has pros and cons, and it gives us powerful features like dynamic typing, late binding, reflection, functional programming, object runtime alteration, closures and much more. Don't worry if those things are unknown to you - you'll know all of them by the end of the course.
-- **dynamically typed**: a variable does not enforce a type. You can reassign any type to a variable, for example, assigning an integer to a variable that holds a string.
-- **loosely typed**: as opposed to strong typing, loosely (or weakly) typed languages do not enforce the type of an object, allowing more flexibility but denying us type safety and type checking (something that TypeScript - which builds on top of JavaScript - provides)
-- **interpreted**: it's commonly known as an interpreted language, which means that it does not need a compilation stage before a program can run, as opposed to C, Java or Go for example. In practice, browsers do compile JavaScript before executing it, for performance reasons, but this is transparent to you - there is no additional step involved.
-- **multi-paradigm**: the language does not enforce any particular programming paradigm, unlike Java for example, which forces the use of object-oriented programming, or C that forces imperative programming. You can write JavaScript using an object-oriented paradigm, using prototypes and the new (as of ES6) classes syntax. You can write JavaScript in a functional programming style, with its first-class functions, or even in an imperative style (C-like).
+- **high level(üst seviye)**: Çalışacağı makinenin detaylarına çok da bakmamanızı sağlayan soyutlamalar(abstractions) yapar. Garbage Collector(çöp toplayıcı) ile otomatik olarak hafıza(memory) yönetimi yapar ki bu sayede, C gibi dillerin gerektirdiğinin aksine, hafıza yönetimi ile uğraşmak yerine kodunuza odaklanabilirsiniz. Ve çok güçlü değişkenlerle ve nesnelerle aranızı sağlamlaştırıp  birçok yapı kurabilirsiniz.
 
-In case you're wondering, *JavaScript has nothing to do with Java*, it's a poor name choice but we have to live with it.
+- **dynamic(dinamik)**: Statik programlama dillerinin aksine, dinamik bir dil runtime(çalışma-zamanı)'da birçok şeyi gerçekleştirirken bu gerçekleştirilenleri statik bir dil compile time(derleme-zamanı)'da yapar. Bunun artıları da eksileri de vardır ve bu bize dynamic typing(dinamik yazım), late binding(geç bağlama), reflection(yansıma), fonksiyonel programlama, object runtime alteration, closures ve daha fazlası gibi güçlü özellikler verir. Bu kavramlar size yabancı geliyorsa endişe etmeyin, bu kitabın sonunda hepsini öğrenmiş olacaksınız.
+
+- **dynamically typed(dinamik tipli)**: Bir değişken, bir türü zorunlu kılmaz. Bir değişkene yeniden başka bir tür atayabilirsiniz. Örneğin string tutan bir değişkene integer(tam sayı) atayabilirsiniz.
+
+- **loosely typed(esnek tipli)**: Strong(güçlü) tiplerin aksine, esnek(ya da zayıf) tipli diller nesnenin türünü zorunlu kılmaz, bu size daha fazla esneklik sağlarken tür güvenliği ve kontrolünü(JavaScript üzerine inşa edilmiş TypeScript'in bize sağladığı şeylerdir) es geçmemize neden olur.   
+
+- **interpreted(yorumlanmış)**: Çoğunlukla yorumlanmış bir dil olarak bilinir; yani C, Java ya da Go gibi dillerin aksine, programın çalışabilmesi için önceden compilation(derlenme) adımına kısmına ihtiyaç duymaz. Pratikte, tarayıcılar JavaScript'i performans nedeniyle çalıştırmadan önce derlerler, fakat bu sizin için şeffaftır - ek bir dahili adım yoktur.
+
+- **multi-paradigm(çoklu paradigma)**: JavaScript dili sizi,örneğin Java'nın gibi, nesne temelli programlama kullanımı ya da C'deki gibi imperative(mecburi) programlama gibi özellikle bir programlama paradigmasına zorlamaz. JavaScript'i prototipler ve yeni(ES6 gibi) sınıf sentaksı kullanan nesne temelli paradigma olarak yazabilirsiniz. Yine JavaScript'i birinci sınıf(first-class) fonksiyonlarla ya da hatta imperative(zorunlu) tarzla(C'deki gibi) fonksiyonel programlama tarzında yazabilirsiniz.
+
+Bir şekilde merak ediyorsanız, *JavaScript'in Java ile bir ilişkisi yoktur*, talihsizce seçilmiş bir isim ama bununla yaşamak zorundayız.
+
 ### Summary of the handbook
 
