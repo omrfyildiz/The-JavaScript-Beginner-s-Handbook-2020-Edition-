@@ -2,9 +2,7 @@
 
 Promiseler asenkron kodla başa çıkabilmenin alternatif bir yoludur.
 
-Bir önceki bölümde gördüğümüz gibi, callbacklerde(geri çağrımlarda) bir fonksiyonun işlenmesi bittiğinde çağrılacak olan başka bir fonksiyon call'a bir fonksiyon iletiyorduk. 
-
-As we saw in the previous chapter, with callbacks we'd be passing a function to another function call that would be called when the function has finished processing.
+Bir önceki bölümde gördüğümüz gibi, callbacklerde(geri çağrımlarda) bir fonksiyonun işlenmesi bittiğinde çağrılacak olan başka bir fonksiyon-call'a bir fonksiyon iletiyorduk.
 
 Bunun gibi:
 
