@@ -1,6 +1,6 @@
 ## Döngüler(Loops)
 
-Döngüler JavaScript'in ana kontrol yapılarından biridirler.
+Döngüler JavaScript'in ana kontrol yapılarından biridir.
 
 Bir döngü ile birlikte bir kod blokunu, kaç kere çalıştırmak istiyorsak isteyelim, otomatize edebilir ve tekrarlatabiliriz.
 
@@ -86,6 +86,7 @@ Tıpkı `while` döngülerinde olduğu gibi, bir `for` döngüsünü de `break` 
 ### `for...of`
 
 Bu döngü diğerlerine nazaran daha yeni sayılır(2015'te tanıtıldı) ve `for` döngüsünün basitleştirilmiş bir versiyonu sayılır:
+
 ```js
 const list = ['a', 'b', 'c']
 

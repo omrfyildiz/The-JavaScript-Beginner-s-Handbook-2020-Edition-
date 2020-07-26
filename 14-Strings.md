@@ -1,6 +1,6 @@
 ## Strings
 
-bir string karakterlerden meydana gelir.
+Bir string karakterlerden meydana gelir.
 
 Bunu tek tırnak işareti ya da çift tırnak işareti içine alınmış string literal(string yazımı) olarak da adlandırabiliriz:
 

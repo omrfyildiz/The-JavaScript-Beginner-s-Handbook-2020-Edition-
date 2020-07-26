@@ -2,8 +2,8 @@
 
 JavaScript'teki değişkenlerin belli bir türü yoktur.
 
-Bir değişkene bazı türlerde bir değer atadığınızda, 
-daha sonra değişkeni, herhangi bir sorun olmadan başka türde bir değeri barındırmak üzere yeniden atayabilirsiniz.
+Bir değişkene bazı türlerde bir değer atadığınızda 
+daha sonra değişkeni herhangi bir sorun olmadan başka türde bir değeri barındırmak üzere yeniden atayabilirsiniz.
 
 JavaScript'te iki tür vardır: **primitive türler** ve **object türler**.
 

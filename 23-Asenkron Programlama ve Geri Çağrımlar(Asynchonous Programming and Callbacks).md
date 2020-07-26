@@ -2,7 +2,7 @@
 
 Çoğu zaman JavaScript kodu senkron olarak çalışır.
 
-Bunun anlamı, bir kod satırı çalıştırılır, sonra bir sonraki satırdaki çalışır ve böyle devam eder.
+Bunun anlamı, bir kod satırı çalıştırılır, sonra, bir sonraki satırdaki çalışır ve böyle devam eder.
 
 Her şey sizin de beklediğiniz gibidir ve birçok programlama dilinde nasıl çalışıyorsa o şekildedir.
 

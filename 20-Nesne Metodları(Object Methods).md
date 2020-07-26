@@ -2,9 +2,9 @@
 
 Daha önceki bölümlerden birinde fonksiyonlardan bahsetmiştim.
 
-Fonksiyonlar bir fonksiyon özelliğine(function property) atanabilir. Bu duruma **metod** denir.
+Fonksiyonlar, bir fonksiyon özelliğine(function property) atanabilir. Bu duruma **metod** denir.
 
-Bu örnekte `start` özelliği atanmış bir fonksiyona sahiptir ve biz bunu özellikler için kullandığımız nokta sentaksını sonunda parantezlerle birlikte kullanarak çağırabiliriz:
+Bu örnekte `start` özelliği atanmış bir fonksiyona sahiptir ve biz bunu propertyler(özellikler) için kullandığımız nokta sentaksını sonunda parantezlerle birlikte kullanarak çağırabiliriz:
 
 ```js
 const car = {

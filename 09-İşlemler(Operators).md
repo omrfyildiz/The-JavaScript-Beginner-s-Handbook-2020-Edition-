@@ -1,6 +1,6 @@
 ## İşlemler(Operators)
 
-İşlemler size iki basit ifadeyi alıp daha kompleks bir formda bir araya getirmenizi sağlar.
+İşlemler, sizin iki basit ifadeyi alıp daha kompleks bir formda bir araya getirmenizi sağlar.
 
 İşlemleri operandlar(işlenenler) üzerine kurarız. Bazı işlemler(operatörler) tek bir işlenenle(operand) ile çalışırken çoğu iki tane ile çalışır. Üç tane ile çalışan sadece bir tane vardır.
 
@@ -21,7 +21,7 @@ const three = 1 + 2
 const four = three + 1
 ```
 
-`+` işlemiaynı zamanda string kullanımında birleştirme işlemi görür. Örneğe dikkat edin:
+`+` işlemi aynı zamanda string kullanımında birleştirme işlemi görür. Örneğe dikkat edin:
 
 ```js
 const three = 1 + 2

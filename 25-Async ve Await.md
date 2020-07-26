@@ -1,8 +1,8 @@
 ## Async and Await
 
-Async(Asenkron) fonksiyonlar promiselerin "daha ileri seviye abstraction"ıdır
+Async(Asenkron) fonksiyonlar, promiselerin "daha ileri seviye abstraction"ıdır
 
-Bir async fonksiyon bir promise döner. Şu örnekteki gibi:
+Bir async fonksiyon, promise döner. Şu örnekteki gibi:
 
 ```js
 const getData = () => {

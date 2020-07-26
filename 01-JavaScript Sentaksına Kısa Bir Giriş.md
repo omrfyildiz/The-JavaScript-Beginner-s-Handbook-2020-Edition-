@@ -1,4 +1,5 @@
 ## JavaScript sentaksına(söz dizimine) kısa bir giriş
+
 Bu kısacık girişte sizlere beş konu hakkında bir şeyler söyleyeceğim:
 
 * Boşluk(White space)
@@ -30,7 +31,7 @@ Pratikte, büyük ihtimalle iyi derlenmiş bir stil tutturacaksınız ve insanla
 
 ## Yazım(Literals)
 
-Yazımı kaynak kodda yazılmış bir değer olarak tanımlarız. Örneğin bir sayı(number), string, boolean ya da Nesne yazımı(Object literals) veya Dizi yazımı(Array literals) gibi daha ileri constructlar(yapılar).
+Yazımı, kaynak kodda yazılmış bir değer olarak tanımlarız. Örneğin bir sayı(number), string, boolean ya da Nesne yazımı(Object literals) veya Dizi yazımı(Array literals) gibi daha ileri constructlar(yapılar).
 
 ```javascript
 5

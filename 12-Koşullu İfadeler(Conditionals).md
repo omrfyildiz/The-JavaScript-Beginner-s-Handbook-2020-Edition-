@@ -25,7 +25,7 @@ Koşullu ifade, kendisine ilettiğiniz ifadeyi doğru(true) veya yanlış(false)
 
 Süslü parantezleri(curly braces) fark ettiniz mi? Bu **block** olarak adlandırılır ve farklı farklı statementlar(kod satırı) listesini gruplamak için kullanılır.
 
-Tekil bir statement olan her yerde block kullanılabilir. Bir koşuldan sonra çalışmasını istediğiniz bir tekil statement varsa blocktan kurtulup sadece statement'i yazılabilir. 
+Tekil bir statement olan her yerde blok kullanılabilir. Bir koşuldan sonra çalışmasını istediğiniz bir tekil statement varsa bloktan kurtulup sadece statement'i yazılabilir. 
 
 ```js
 if (true) doSomething()

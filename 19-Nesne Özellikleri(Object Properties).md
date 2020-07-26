@@ -35,9 +35,9 @@ Geçerli olmayan değişken ismi karakterleri boşluklar, tire ve diğer özel k
 
 Gördüğünüz üzere, çoklu özellikler olduğunda her bir özelliği virgül işareti ile ayırıyoruz.
 
-Özelliğin değerini iki farklı sentaks kullanımıyla alabiliriz.
+Propertynin(özelliğin) değerini iki farklı sentaks kullanımıyla alabiliriz.
 
-İlki **nokta notasyonu(dot notation)**:
+İlk olarak **nokta notasyonu(dot notation)**:
 
 ```js
 car.color //'blue'

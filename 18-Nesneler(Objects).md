@@ -43,7 +43,7 @@ myCar.model //'Fiesta'
 
 Nesneler **her zaman referans olarak iletilir.**
 
-Bir değişkeni aynı değerde bir başkasına atarsanız, number veya string gibi primitif türse(primitive type), değere göre iletilir:
+Bir değişkeni aynı değerde bir başkasına atarsanız, number veya string gibi primitif türse(primitive type) değere göre iletilir:
 
 Şu örneğe bakın:
 
@@ -60,4 +60,4 @@ anotherCar.color = 'yellow'
 car.color //'yellow'
 ```
 
-Diziler ve fonksiyonlar bile şapka altında nesnedirler. O halde nasıl çalıştıklarını anlamak çok önemli.
+Diziler ve fonksiyonlar bile, şapka altında, nesnedirler. O halde nasıl çalıştıklarını anlamak çok önemli.

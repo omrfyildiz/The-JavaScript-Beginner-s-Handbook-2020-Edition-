@@ -41,6 +41,7 @@ let getData = function() {
 ```
 
 ve değişkenin adını kullanarak fonksiyonu çağırırız:
+
 ```js
 let getData = function() {
   //...

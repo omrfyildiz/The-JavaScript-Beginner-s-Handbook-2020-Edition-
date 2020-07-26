@@ -10,7 +10,7 @@ React veya Vue tarafından belirli bir özellik sunuluyor mu? Yoksa "düz JavaSc
 
 Bu kitapta JavaScript hakkında konuşacağım, dil olanı hakkında.
 
-Öğrenme sürecinizi çok da karmaşık hale getiren ve harici ekosistemlerce geliştirilen şeyler dahil değildir.
+Öğrenme sürecinizi çok karmaşık hale getiren ve harici ekosistemlerce geliştirilen şeyler dahil değildir.
 
 
 

@@ -8,6 +8,7 @@ Bir `merhaba` stringi **değer(value)'dir**.
 Tür(Type) değerin kategorisidir. JavaScript'te çok farklı türler bulunur ve bu türlerden ileride detaylıca bahsedeceğiz. Her türün kendine özgü karakteristiği vardır.
 
 Bir değere(Value) referans vermeye ihtiyacımız olduğunda ona bir **değişken(variable)** atarız.
+
 Değişkenlerin bir adı olabilir, ve değer, bir değişken içinde saklanan şeydir; dolayısıyla bu değere daha sonra değişken ismi ile erişebiliriz.
 
 

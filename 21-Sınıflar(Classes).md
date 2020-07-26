@@ -14,7 +14,7 @@ const person = {
 }
 ```
 
-`name` özelliği olan `Person` isimli bir sınıf(Büyük harf `P` sınıfları kullanmanın geleneksel yoludur) yaratabiliriz:
+`name` property(özelliği) olan `Person` isimli bir sınıf(Büyük harf `P` sınıfları kullanmanın geleneksel yoludur) yaratabiliriz:
 
 ```js
 class Person {
@@ -42,7 +42,7 @@ ve şöyle kullanarak buna ulaşabilirsiniz
 flavio.name
 ```
 
-tıpkı diğer nesne özellikleri için yaptığımız gibi.
+tıpkı diğer nesne propertyleri için yaptığımız gibi.
 
 Sınıflar `name` gibi özellikler ve ayrıca metodlar tutabilir.
 

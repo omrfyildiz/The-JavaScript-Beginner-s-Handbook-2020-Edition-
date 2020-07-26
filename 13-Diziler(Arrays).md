@@ -139,8 +139,7 @@ Genellikle kullanılan sentaks şudur:
 a.find(x => x.id === my_id)
 ```
 
-Yukarıdaki kod satırı dizedeki `id === my_id` nin sahip olduğu ilk öğeyi verir.
-The above line will return the first element in the array that has `id === my_id`.
+Yukarıdaki kod satırı, dizedeki `id === my_id` öğesine sahip olan ilk elementi döndürür.
 
 `findIndex()` çalışma biçimi `find()` ile benzerdir, fakat true değer dönen ilk öğenin indeksini verir. Eğer bulunmazsa `undefined` olarak döner:
 

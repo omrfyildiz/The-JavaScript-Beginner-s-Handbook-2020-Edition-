@@ -77,6 +77,3 @@ Benim size tavsiyem her zaman `const` kullanmanız. `let` sadece bir değişkene
 
 
 2015'e kadar `var` JavaScript'te bir değişken tanımlamanın tek yoluydu. Bugün ise modern kod tabanları daha çok sadece `const` ve `let` kullanmaktalar. Şu [linkte](https://flaviocopes.com/javascript-difference-let-var/) bazı temel farklılıklarını anlattım ama yeni başlayanlardansanız bunu şimdilik çok dikkate almayabilirsiniz. Sadece `const` ve `let` kullanın.
-
-
-2015'e kadar `var` JavaScript'te bir değişken tanımlamanın tek yoluydu. Bugün ise modern kod tabanları daha çok sadece `const` ve `let` kullanmaktalar. Şu [linkte](https://flaviocopes.com/javascript-difference-let-var/) bazı temel farklılıklarını anlattım ama yeni başlayanlardansanız bunu şimdilik çok dikkate almayabilirsiniz. Sadece `const` ve `let` kullanın.
