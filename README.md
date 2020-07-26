@@ -41,29 +41,55 @@ Bir şekilde merak ediyorsanız, *JavaScript'in Java ile bir ilişkisi yoktur*, 
 ### Kitabın Başlıkları
 
 01.JavaScript Sentaksına Kısa Bir Giriş
+
 02.Sadece JavaScript
+
 03.Kısa Bir Geçmiş
+
 04.Noktalı Virgül Kullanımı
+
 05.Değerler(Values)
+
 06.Değişkenler(Variables)
+
 07.Türler(Types)
+
 08.Expressions(İfadeler)
+
 09.İşlemler(Operators)
+
 10.Öncelik Kuralları
+
 11.Karşılaştırma Operatörleri(Comparison Operators)
+
 12.Koşullu İfadeler(Conditionals)
+
 13.Diziler(Arrays)
+
 14.Strings
+
 15.Döngüler(Loops)
+
 16.Functions(Fonksiyonlar)
+
 17.Arrow(Ok) Fonksiyonlar
+
 18.Nesneler(Objects)
+
 19.Nesne Özellikleri(Object Properties)
+
 20.Nesne Metodları(Object Methods)
+
 21.Sınıflar(Classes)
+
 22.Kalıtım(Inheritance)
+
 23.Asenkron Programlama ve Geri Çağrımlar(Asynchonous Programming and Callbacks)
+
 24.Promises
+
 25.Async ve Await
+
 26.Değişken Kapsamı(Variable scope)
+
 27.Sonuç(Conclusion)
