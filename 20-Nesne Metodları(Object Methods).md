@@ -1,10 +1,10 @@
-## Object Methods
+## Nesne Metodları(Object Methods)
 
-I talked about functions in a previous chapter.
+Daha önceki bölümlerden birinde fonksiyonlardan bahsetmiştim.
 
-Functions can be assigned to a function property, and in this case they are called **methods**.
+Fonksiyonlar, bir fonksiyon özelliğine(function property) atanabilir. Bu duruma **metod** denir.
 
-In this example, the `start` property has a function assigned, and we can invoke it by using the dot syntax we used for properties, with the parentheses at the end:
+Bu örnekte `start` özelliği atanmış bir fonksiyona sahiptir ve biz bunu propertyler(özellikler) için kullandığımız nokta sentaksını sonunda parantezlerle birlikte kullanarak çağırabiliriz:
 
 ```js
 const car = {
@@ -18,9 +18,9 @@ const car = {
 car.start()
 ```
 
-Inside a method defined using a `function() {}` syntax we have access to the object instance by referencing `this`.
+`function() {}` sentaksı kullanılarak tanımlanan bir metodun içinde `this` tarafından referans vererek nesnenin bir örneğine(instance) erişiriz.
 
-In the following example, we have access to the `brand` and `model` properties values using `this.brand` and `this.model`:
+Aşağıdaki örnekte `brand` ve `model` özelliklerinin değerlerine `this.brand` ve `this.model` kullanarak erişiriz:
 
 ```js
 const car = {
@@ -35,7 +35,7 @@ const car = {
 car.start()
 ```
 
-It's important to note this distinction between regular functions and arrow functions - we don't have access to `this` if we use an arrow function:
+Normal fonksiyonlarla arrow fonksiyonlar arasındaki ayrımın akılda tutulması önemlidir: Arrow fonksiyon kullanıyorsak `this` erişimimiz olmaz:
 
 ```js
 const car = {
@@ -43,18 +43,18 @@ const car = {
   model: 'Fiesta',
   start: () => {
     console.log(`Started 
-      ${this.brand} ${this.model}`) //not going to work
+      ${this.brand} ${this.model}`) //çalışmayacaktır
   }
 }
 
 car.start()
 ```
 
-This is because **arrow functions are not bound to the object**.
+Bunun nedeni **arrow fonksiyonların objeye bağlı olmamasıdır**.
 
-This is the reason why regular functions are often used as object methods.
+İşte bu yüzden normal fonksiyonlar sıklıkla kullanılan nesne metodlarıdır.
 
-Methods can accept parameters, like regular functions:
+Metodlar, tıpkı fonksiyonlar gibi, parametre alabilirler:
 
 ```js
 const car = {

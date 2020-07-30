@@ -1,24 +1,24 @@
-## Loops
+## Döngüler(Loops)
 
-Loops are one of the main control structures of JavaScript.
+Döngüler JavaScript'in ana kontrol yapılarından biridir.
 
-With a loop we can automate and repeat a block of code however many times we want it to run, even indefinitely.
+Bir döngü ile birlikte bir kod blokunu, kaç kere çalıştırmak istiyorsak isteyelim, otomatize edebilir ve tekrarlatabiliriz.
 
-JavaScript provides many way to iterate through loops.
+JavaScript döngüler aracılığıyla yinelemenin birçok yoluna sahiptir.
 
-I want to focus on 3 ways:
+Ben sadece üç tanesine odaklanacağım:
 
-- while loops
-- for loops
-- for..of loops
+- while loops(while döngüleri)
+- for loops(for döngüleri)
+- for..of loops(for..of döngüleri)
 
 ### `while`
 
-The while loop is the simplest looping structure that JavaScript provides us.
+while döngüsü JavaScript'in bize sağladığı en basit döngü yapısıdır.
 
-We add a condition after the `while` keyword, and we provide a block that is run until the condition evaluates to `true`.
+`while` anahtar kelimesinden sonra koşul ekleriz ve koşul `true` değer dönene kadar çalışacak bir kod bloku oluşturmuş oluruz.
 
-Example:
+Örnek:
 
 ```js
 const list = ['a', 'b', 'c']
@@ -30,7 +30,7 @@ while (i < list.length) {
 }
 ```
 
-You can interrupt a `while` loop using the `break` keyword, like this:
+`while` döngüsünü `break` anahtar kelimesi ile durdurabilirsiniz:
 
 ```js
 while (true) {
@@ -38,7 +38,7 @@ while (true) {
 }
 ```
 
-and if you decide that in the middle of a loop you want to skip the current iteration, you can jump to the next iteration using `continue`:
+ve eğer bir döngünün ortasında mevcut yinelemeyi es geçip bir diğer yinelemeye `continue` kullanarak atlayabilirsiniz:
 
 ```js
 while (true) {
@@ -48,9 +48,9 @@ while (true) {
 }
 ```
 
-Very similar to `while`, we have `do..while` loops. It's basically the same as `while`, except the condition is evaluated *after* the code block is executed.
+`while` kullanımına çok benzeyen `do..while` döngüleri de vardır. Temel olarak `while` ile aynı olsa da koşul, kod bloku işlemini tamamladıktan *sonra* değerlendirilir.
 
-This means the block is always executed *at least once*.
+Bu, şu anlama gelir: kod bloku her zaman *en azından bir kere* işleme alınır.
 
 Example:
 
@@ -66,11 +66,11 @@ do {
 
 ### `for`
 
-The second very important looping structure in JavaScript is the **for loop**.
+JavaScript'te ikinci en önemli döngü yapısı ise **for döngüsüdür**
 
-We use the `for` keyword and we pass a set of 3 instructions: the initialization, the condition, and the increment part.
+`for` anahtar kelimesini kullanarak üçlü bir seti geçeriz: başlatma, koşul ve artış kısmı.
 
-Example:
+Örnek:
 
 ```js
 const list = ['a', 'b', 'c']
@@ -81,11 +81,11 @@ for (let i = 0; i < list.length; i++) {
 }
 ```
 
-Just like with `while` loops, you can interrupt a `for` loop using `break` and you can fast forward to the next iteration of a `for` loop using `continue`.
+Tıpkı `while` döngülerinde olduğu gibi, bir `for` döngüsünü de `break` kullanarak durdurabilirsiniz. Ve yine aynı şekilde bir diğer `for` döngüsü yinelemesine `continue` kullanarak hızlıca geçebilirsiniz.
 
 ### `for...of`
 
-This loop is relatively recent (introduced in 2015) and it's a simplified version of the `for` loop:
+Bu döngü diğerlerine nazaran daha yeni sayılır(2015'te tanıtıldı) ve `for` döngüsünün basitleştirilmiş bir versiyonu sayılır:
 
 ```js
 const list = ['a', 'b', 'c']

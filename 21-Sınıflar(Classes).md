@@ -1,12 +1,12 @@
-## Classes
+## Sınıflar(Classes)
 
-We talked about objects, which are one of the most interesting parts of JavaScript.
+JavaScript'in en ilgi çekici kısımlarından biri olan nesneler hakkında konuştuk.
 
-In this chapter we'll go up one level by introducing classes.
+Bu bölümde sınıfları bir adım ileri giderek göreceğiz.
 
-What are classes? They are a way to define a common pattern for multiple objects.
+Sınıflar nedir? Birden çok nesne için ortak bir desen(pattern) tanımlamanın bir yoludur.
 
-Let's take a person object:
+Bir şahıs nesnesini ele alalım:
 
 ```js
 const person = {
@@ -14,7 +14,7 @@ const person = {
 }
 ```
 
-We can create a class named `Person` (note the capital `P`, a convention when using classes), that has a `name` property:
+`name` property(özelliği) olan `Person` isimli bir sınıf(Büyük harf `P` sınıfları kullanmanın geleneksel yoludur) yaratabiliriz:
 
 ```js
 class Person {
@@ -22,31 +22,31 @@ class Person {
 }
 ```
 
-Now from this class, we initialize a `flavio` object like this:
+Şimdi bu sınıftan `flavio` nesnesi türetebiliriz:
 
 ```js
 const flavio = new Person()
 ```
 
-`flavio` is called an *instance* of the Person class.
+`flavio` Person sınıfının *örneği(instance)* olarak adlandırılır.
 
-We can set the value of the `name` property:
+`name` özelliğinin(property) değerini set edebiliriz
 
 ```js
 flavio.name = 'Flavio'
 ```
 
-and we can access it using
+ve şöyle kullanarak buna ulaşabilirsiniz
 
 ```js
 flavio.name
 ```
 
-like we do for object properties.
+tıpkı diğer nesne propertyleri için yaptığımız gibi.
 
-Classes can hold properties, like `name`, and methods.
+Sınıflar `name` gibi özellikler ve ayrıca metodlar tutabilir.
 
-Methods are defined in this way:
+Metodlar şu yolla tanımlanır:
 
 ```js
 class Person {
@@ -56,7 +56,7 @@ class Person {
 }
 ```
 
-and we can invoke methods on an instance of the class:
+ve metodları bir sınıfın örneği(instance of the class) üzerinden çağırabiliriz:  
 
 ```js
 class Person {
@@ -68,9 +68,9 @@ const flavio = new Person()
 flavio.hello()
 ```
 
-There is a special method called `constructor()` that we can use to initialize the class properties when we create a new object instance.
+Yeni bir nesne örneği yarattığımız zaman sınıf özelliklerini tetiklemek için kullanabileceğimiz özel bir metod olarak adlandırılan `constructor()` diye bir metod vardır.
 
-It works like this:
+Şu şekilde çalışır:
 
 ```js
 class Person {
@@ -84,20 +84,20 @@ class Person {
 }
 ```
 
-Note how we use `this` to access the object instance.
+Nesne örneğine(object instance) erişmek için `this`'i nasıl kullandığımızı not edin.
 
-Now we can instantiate a new object from the class, pass in a string, and when we call `hello` we'll get a personalized message:
+Şimdi bir string içinde yer vererek sınıftan yeni bir nesne örneklendirebiliriz(instantiate). Ve `hello` diye çağırdığımızda kişiselleştirilmiş bir mesaj alacağız:
 
 ```js
 const flavio = new Person('flavio')
 flavio.hello() //'Hello, I am flavio.'
 ```
 
-When the object is initialized, the `constructor` method is called with any parameters passed.
+Nesne tetiklendiği zaman `constructor` metod, yer verilen parametrelerle çağrılır.
 
-Normally methods are defined on the object instance, not on the class.
+Normalde metodlar, sınıflarda değil; nesne örneğinde(object instance) tanımlanırlar.
 
-You can define a method as `static` to allow it to be executed on the class instead:
+Bunun yerine sınıfta yürütülmesine izin vermek için bir metodu `statik` olarak tanımlayabilirsiniz:
 
 ```js
 class Person {
@@ -109,4 +109,4 @@ class Person {
 Person.genericHello() //Hello
 ```
 
-This is very useful, at times.
+Zaman zaman çok yararlıdır bu yol.

@@ -1,8 +1,8 @@
-## Inheritance
+## Kalıtım(Inheritance)
 
-A class can **extend** another class, and objects initialized using that class inherit all the methods of both classes.
+Bir sınıf başka bir sınıfı **genişletebilir(extend)** ve bu sınıf kullanılarak başlatılan nesneler her iki sınıfın tüm metodlarını devralır.
 
-Suppose we have a class `Person`:
+`Person` adlı bir sınıfımız olduğunu varsayalım:
 
 ```js
 class Person {
@@ -12,7 +12,7 @@ class Person {
 }
 ```
 
-We can define a new class, `Programmer`, that extends `Person`:
+`Person` sınıfını genişleten(extend eden) `Programmer` diye yeni bir sınıf tanımlayalım:
 
 ```js
 class Programmer extends Person {
@@ -20,14 +20,14 @@ class Programmer extends Person {
 }
 ```
 
-Now if we instantiate a new object with the class `Programmer`, it has access to the `hello()` method:
+Şimdi `Programmer` sınıfından yeni bir nesne türetirsek `hello()` metoduna erişimi olacaktır:
 
 ```js
 const flavio = new Programmer()
 flavio.hello() //'Hello, I am a Person'
 ```
 
-Inside a child class, you can reference the parent class by calling `super()`:
+Child class(alt sınıf)'ın içinde `super()` öğesi ile çağırarak parent class(üst sınıf)'a referans verebilirsiniz:
 
 ```js
 class Programmer extends Person {
@@ -41,4 +41,4 @@ const flavio = new Programmer()
 flavio.hello()
 ```
 
-The above program prints *Hello, I am a Person. I am also a programmer.*.
+Yukarıdaki program *Hello, I am a Person. I am also a programmer.* şeklinde çıktı verecektir.

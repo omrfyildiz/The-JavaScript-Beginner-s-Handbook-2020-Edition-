@@ -1,23 +1,23 @@
 ## Strings
 
-A string is a sequence of characters.
+Bir string karakterlerden meydana gelir.
 
-It can be also defined as a string literal, which is enclosed in quotes or double quotes:
+Bunu tek tırnak işareti ya da çift tırnak işareti içine alınmış string literal(string yazımı) olarak da adlandırabiliriz:
 
 ```js
-'A string'
-"Another string"
+'Bir string'
+"Başka bir string"
 ```
 
-I personally prefer single quotes all the time, and use double quotes only in HTML to define attributes.
+Ben kişisel olarak tek tırnak işareti kullanıyorum her zaman. Çift tırnak işaretini sadece HTML'de attributeları tanımlarken kullanıyorum.
 
-You assign a string value to a variable like this:
+Bir değişkene şu şekilde değer atarsınız:
 
 ```js
 const name = 'Flavio'
 ```
 
-You can determine the length of a string using the `length` property of it:
+`length` property kullanarak bir stringin uzunluğunu elde edebilirsiniz:
 
 ```js
 'Flavio'.length //6
@@ -25,28 +25,28 @@ const name = 'Flavio'
 name.length //6
 ```
 
-This is an empty string: `''`. Its length property is 0:
+Boş bir string şöyledir: `''`. Boş stringin length'i 0'dır:
 
 ```js
 ''.length //0
 ```
 
-Two strings can be joined using the `+` operator:
+İki string `+` işlemi ile birleştirilebilir:
 
 ```js
 "A " + "string"
 ```
 
-You can use the `+` operator to *interpolate* variables:
+Ayrıca `+` işlemini değişkenleri *interpolate(bir araya getirmek)* için kullanabilirsiniz:
 
 ```js
 const name = 'Flavio'
 "My name is " + name //My name is Flavio
 ```
 
-Another way to define strings is to use template literals, defined inside backticks. They are especially useful to make multiline strings much simpler. With single or double quotes you can't define a multiline string easily - you'd need to use escaping characters.
+String tanımlamanın bir diğer yolu da backticks(``) içinde yazılan template literals(şablon yazım)'dir. Çoklu satır stringlerin yazımında kullanılması özellikle işi oldukça kolaylaştırır. Tek ya da çift tırnak işaretiyle kolayca çoklu satırdan oluşan stringleri kolayca tanımlayamazsınız.
 
-Once a template literal is opened with the backtick, you just press enter to create a new line, with no special characters, and it's rendered as-is:
+Backtick ile bir template literal açtığınız zaman, sadece enter'a basarak(herhangi özel bir karakter olmadan) yeni bir satır oluşturursunuz. Ve olduğu gibi elde edilir:
 
 ```js
 const string = `Hey
@@ -56,9 +56,9 @@ string
 is awesome!`
 ```
 
-Template literals are also great because they provide an easy way to interpolate variables and expressions into strings.
+Template literal çok işe yarar çünkü değişkenleri(variables) ve ifadeleri(expression) stringde kolayca bir araya getirme(interpolate) imkanını sağlar.
 
-You do so by using the `${...}` syntax:
+`${...}` sentaksını kullanarak da bunu yapabilirsiniz:
 
 ```js
 const var = 'test'
@@ -66,7 +66,7 @@ const string = `something ${var}`
 //something test
 ```
 
-inside the `${}` you can add anything, even expressions:
+`${}` içine istediğinizi ekleyebilirsiniz, expressionları bile:
 
 ```js
 const string = `something ${1 + 2 + 3}`

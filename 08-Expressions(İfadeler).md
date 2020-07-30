@@ -32,11 +32,11 @@ String ifadeler yine string sonucu veren ifadelerdir:
 'A ' + 'string'
 ```
 
-Mantıksal ifadeler mantıksal operatörlerin kullanımını sağlar ve boolean değerler ile sonuçlanır:
+Mantıksal ifadeler, mantıksal operatörlerin kullanımını sağlar ve boolean değerler ile sonuçlanır:
 
 ```js
 a && b
 a || b
 !a
 ```
-Nesneleri, fonksiyonları ve dizileri içeren daha ileri ifadelern de daha sonra bahsedeceğim.
+Nesneleri, fonksiyonları ve dizileri içeren daha ileri ifadelerden de daha sonra bahsedeceğim.
