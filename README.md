@@ -93,3 +93,7 @@ Bir şekilde merak ediyorsanız, *JavaScript'in Java ile bir ilişkisi yoktur*, 
 26.Değişken Kapsamı(Variable scope)
 
 27.Sonuç(Conclusion)
+
+28.Single Page Application Frameworks (React, Angular, Vue)
+
+
